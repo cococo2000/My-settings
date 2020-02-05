@@ -3,7 +3,7 @@
 
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
-
+    //默认打开的终端，即profiles中每项的“guid”值
     "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
 
     "profiles":
@@ -14,10 +14,24 @@
             "name": "Windows PowerShell",
             "commandline": "powershell.exe",
             "hidden": false,
+            // 颜色主题：default.json中预设 + 此文件中schemes(可自定义)
             "colorScheme": "ChallengerDeep",
+            // 亚克力背景（毛玻璃）
             "useAcrylic": true,
-            "closeOnExit": false,
+            // 亚克力（毛玻璃）设置为true后窗口的透明度
             "acrylicOpacity": 0.5,
+            // 背景颜色
+            // "background": "#0026ff",
+            // 设置背景图片地址、对齐方式、填充方式,透明度和拉伸
+            // "backgroundImage": "E:/Background/h101.jpg",
+            // "backgroundImageAlignment": "bottom",
+            // "backgroundImageStretchMode": "fill",
+            // "backgroundImageOpacity": 0.3,
+            // "backgroundImageStretchMode": "fill",
+            // 光标(cursor)颜色
+            "cursorColor": "#FFFFFF",
+            "closeOnExit": false,
+            // 字体（必要时需自行安装）
             "fontFace": "Delugia Nerd Font"
         },
         {
@@ -32,6 +46,7 @@
             "acrylicOpacity": 0.5
         },
         {
+            // Make changes here to Ubuntu(WSL Terminal) profile
             "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
             "hidden": false,
             "name": "Ubuntu",
@@ -43,6 +58,7 @@
             "fontFace": "Consolas"
         },
         {
+            // Make changes here to Azure Cloud Shell profile
             "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
             "hidden": false,
             "name": "Azure Cloud Shell",
@@ -55,6 +71,7 @@
     ],
 
     // Add custom color schemes to this array
+    // See https://github.com/mbadolato/iTerm2-Color-Schemes to add more
     "schemes": [
         {
             "name" : "cyberpunk",
