@@ -1,6 +1,6 @@
 # My-settings
 About my settings of software
 
-##VScode
+## VScode
 
-##Windows Terminal
+## Windows Terminal
