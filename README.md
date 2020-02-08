@@ -2,6 +2,11 @@
 About my settings of software
 
 ## VScode
+### LaTeX Workshop
+- To build: **"Ctrl" + "Alt" + "b"**
+- To view: **"Ctrl" + "Alt" + "v"**
+- To clean generated files: **"Ctrl" + "Alt" + "c"**
+- For more: <https://github.com/James-Yu/LaTeX-Workshop/wiki>
 
 ## Windows Terminal
 - To quickly open *Windows Terminal" :  
