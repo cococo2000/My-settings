@@ -1,7 +1,6 @@
 {
     "window.menuBarVisibility": "default",
     "window.zoomLevel": 0,
-    "awarestAlign.eol": "",
     "C_Cpp.updateChannel": "Insiders",
     "editor.renderWhitespace": "none",
     "editor.suggestSelection": "first",
@@ -9,60 +8,6 @@
     "editor.renderControlCharacters": true,
     "code-runner.runInTerminal": true,
     "explorer.confirmDelete": false,
-    "peacock.favoriteColors": [
-        {
-            "name": "Angular Red",
-            "value": "#b52e31"
-        },
-        {
-            "name": "Auth0 Orange",
-            "value": "#eb5424"
-        },
-        {
-            "name": "Azure Blue",
-            "value": "#007fff"
-        },
-        {
-            "name": "C# Purple",
-            "value": "#68217A"
-        },
-        {
-            "name": "Gatsby Purple",
-            "value": "#639"
-        },
-        {
-            "name": "Go Cyan",
-            "value": "#5dc9e2"
-        },
-        {
-            "name": "Java Blue-Gray",
-            "value": "#557c9b"
-        },
-        {
-            "name": "JavaScript Yellow",
-            "value": "#f9e64f"
-        },
-        {
-            "name": "Mandalorian Blue",
-            "value": "#1857a4"
-        },
-        {
-            "name": "Node Green",
-            "value": "#215732"
-        },
-        {
-            "name": "React Blue",
-            "value": "#00b3e6"
-        },
-        {
-            "name": "Something Different",
-            "value": "#832561"
-        },
-        {
-            "name": "Vue Green",
-            "value": "#42b883"
-        }
-    ],
     "vsicons.dontShowNewVersionMessage": true,
     "explorer.confirmDragAndDrop": false,
     "files.autoGuessEncoding": true,
@@ -70,13 +15,32 @@
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
     "files.autoSave": "onFocusChange",
     "workbench.iconTheme": "vscode-icons",
-    "sync.gist": "ad2d707873e35c61ea7562a4d716cbe3",
     "verilog.linting.linter": "xvlog",
     "git.autofetch": true,
 
+    // 默认打开使用的PDF阅读器
     "latex-workshop.view.pdf.viewer": "tab",
+    // 外部PDF阅读器
+    "latex-workshop.view.pdf.external.viewer.args": ["%PDF%"],
+    "latex-workshop.view.pdf.external.viewer.command": "C:/Program Files (x86)/Adobe/Acrobat DC/Acrobat/Acrobat.exe",
+    // 文件改变时是否build
+    "latex-workshop.latex.autoBuild.run": "never",
+    //
+    "latex-workshop.view.pdf.external.synctex.args": [
+        // 正向搜索
+        "-forward-search",
+        "%TEX%",
+        "%LINE%",
+        // 复用窗口实例,控制从外部pdf阅读器对tex代码进行反向搜索时不打开新窗口
+        "-reuse-instance",
+        // 反向搜索
+        "-inverse-search",
+        //前一个是vscode的本地路径,后一个是本地一个特定js的路径,一般只要把[username]改为你系统内的个人文件夹名字即可.
+        // "\"C:\\Users\\15961\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"C:\\Users\\15961\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\cli.js\" -r -g \"%f:%l\"",
+        "%PDF%"
+    ],
+    // 编译工具和命令
     "latex-workshop.latex.tools": [
-        // 编译工具和命令
         {
             "name": "xelatex",
             "command": "xelatex",
@@ -142,4 +106,4 @@
             "env": {}
         }
     ]
-}   
+}
