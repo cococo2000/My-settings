@@ -35,8 +35,6 @@
         "-reuse-instance",
         // 反向搜索
         "-inverse-search",
-        //前一个是vscode的本地路径,后一个是本地一个特定js的路径,一般只要把[username]改为你系统内的个人文件夹名字即可.
-        // "\"C:\\Users\\15961\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"C:\\Users\\15961\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\cli.js\" -r -g \"%f:%l\"",
         "%PDF%"
     ],
     // 编译工具和命令
